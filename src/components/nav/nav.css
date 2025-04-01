@@ -1,0 +1,24 @@
+.nav{
+    position:fixed;
+}
+.contact{
+    cursor:pointer;
+}
+.contact.active{
+    color:red;
+    /* transform:scale(0.5) */
+}
+.nn{
+    position:fixed;
+}
+@media(max-width:800px){
+    .contact,.name1{
+        display:none;
+    }
+}
+@media(min-width:800px){
+    .menu,.house{
+        display:none;
+    }
+
+}
