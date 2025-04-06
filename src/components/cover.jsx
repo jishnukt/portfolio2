@@ -12,7 +12,7 @@ function cover() {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className='h-[100vh] cover md:flex flex-row items-center justify-between' >
+        <div className=' cover md:flex flex-row items-center justify-between' >
             <div className="covertext  pt-20 font-bold pl-[12vw] ">
                 <h1 className='text-[1rem] md:text-[2vw] text-wte'>HELLO !!</h1>
                 <h1 className='text-[3rem] md-text-[6vw]  text-wte'>I'm a <span className='text-rd'>web</span></h1>

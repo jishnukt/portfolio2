@@ -4,10 +4,11 @@ import Pro2 from '../assets/7.png'
 import Pro3 from '../assets/9.png'
 import { Link2 } from 'lucide-react';
 import Github from '../assets/github1.png'
-
+import ScrollReveal from './scrollReveal';
 function project() {
     return (
-        <div className=' flex flex-col justify-center items-center px-[8vw]'>
+        <ScrollReveal>
+        <div id='Projects' className=' flex flex-col justify-center items-center px-[8vw]'>
             <h1 className='heading'>Projects</h1>
             <div className="pro bg-r pr-10 pb-10 flex justify-center items-center">
                 <img src={Pro1} alt="" className='h-[40vw]' />
@@ -37,6 +38,7 @@ function project() {
                 </div>
             </div>
         </div>
+        </ScrollReveal>
     )
 }
 

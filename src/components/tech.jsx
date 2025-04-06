@@ -12,43 +12,30 @@ import Node from '../assets/node1.png'
 import Js from '../assets/js1.png'
 import Bootstrap from '../assets/bootstrap1.png'
 import Sql from '../assets/sql.png'
-
-
-
-
-
+import { motion } from 'framer-motion'
+import ScrollReveal from './scrollReveal'
+const skills = [Github, React1, Html, Css, Mongo1, Git, Express, Python, Tailwind, Node, Js, Bootstrap, Sql]
 
 function tech() {
   return (
-    <div className='flex flex-col justify-center items-center px-[8vw]'>
-            <h1 className='heading'>Skills</h1>
-            <div className='flex gap-10 flex-wrap justify-center items-center'>
-            <img className='h-10' src={Github} alt="" />
-            <img className='h-10' src={React1} alt="" />
-            <img className='h-10' src={Html} alt="" />
-            <img className='h-10' src={Css} alt="" />
-            <img className='h-10' src={Mongo1} alt="" />
-            <img className='h-10' src={Git} alt="" />
-            <img className='h-10' src={Express} alt="" />
-            <img className='h-10' src={Python} alt="" />
-            <img className='h-10' src={Tailwind} alt="" />
-            <img className='h-10' src={Node} alt="" />
-            <img className='h-10' src={Js} alt="" />
-            <img className='h-10' src={Bootstrap} alt="" />
-            <img className='h-10' src={Sql} alt="" />
+    <ScrollReveal>
+      <div id='Skills' className='flex flex-col justify-center items-center px-[8vw]'>
+        <h1 className='heading'>Skills</h1>
+        <div className='flex gap-10 flex-wrap justify-center items-center'>
+          {skills.map((icon, index) => (
+            <motion.img
+              key={index}
+              src={icon}
+              alt={`tech-${index}`}
+              class='h-14 cursor-pointer'
+              whileHover={{ scale: 1.2, rotate: 5 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            />
+          ))}
 
-
-
-
-
-
-
-
-            </div>
-
-
-    </div>
+        </div>
+      </div>
+    </ScrollReveal>
   )
-}
-
+}``
 export default tech

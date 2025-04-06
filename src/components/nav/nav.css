@@ -8,6 +8,9 @@
     color:red;
     /* transform:scale(0.5) */
 }
+.menubar1.active{
+    color:red;
+}
 .nn{
     position:fixed;
 }
@@ -18,6 +21,9 @@
 }
 @media(min-width:800px){
     .menu,.house{
+        display:none;
+    }
+    .menubar{
         display:none;
     }
 
