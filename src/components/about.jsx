@@ -40,7 +40,7 @@ function about() {
                         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.99 }} className='h-10 flex gap-1 justify-center items-center cursor-pointer bg-rd rounded-xl text-ylw'>
                             <ArrowDownToLine />
 
-                            <a href='/JishnuKT_CV.pdf' target="_blank"
+                            <a href='/JishnuKT_CV.pdf' target="_blank" download="JishnuKT_CV.pdf"
                                 rel="noopener noreferrer" className='  '>Resume</a>
                         </motion.div>
                     </div>
