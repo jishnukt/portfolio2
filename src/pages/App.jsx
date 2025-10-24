@@ -12,8 +12,8 @@ function App() {
     <div className='flex flex-col pt-5 cursor-default'>
       <Nav setPage={setPage} page={page} />
       <div id='home'>{page === "Home" && <Homepage />}   </div>
-      <div id='resume'>{page === "Resume" && <Resume />}  </div>
-      <div id='contact'>{page === "Contact" && <Contact />}    </div>
+      {/* <div id='resume'>{page === "Resume" && <Resume />}  </div> */}
+      {/* <div id='contact'>{page === "Contact" && <Contact />}    </div> */}
       <Footer setPage={setPage} page={page} />
     </div >
   )
