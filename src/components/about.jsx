@@ -35,7 +35,7 @@ function about() {
                     <div className="name flex flex-col py-10 gap-4 ">
 
                         <div className='text-[6vw] text-ylw '>JISHNU </div>
-                        <p>Inquisitive, hard-working and Tech enthusiast. Looking for job opportunities where I can
+                        <p>Inquisitiv, hard-working and Tech enthusiast. Looking for job opportunities where I can
                             apply my skills and contribute to real-world projects.</p>
                         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.99 }} className='h-10 flex gap-1 justify-center items-center cursor-pointer bg-rd rounded-xl text-ylw'>
                             <ArrowDownToLine />
